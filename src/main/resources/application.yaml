@@ -1,0 +1,17 @@
+spring:
+  datasources:
+    -
+      name: db1
+      url: jdbc:mysql://localhost:3306/db1?zeroDateTimeBehavior=convertToNull
+      username: admin
+      password: admin
+      driver-class-name: com.mysql.jdbc.Driver
+    -
+      name: db2
+      url: jdbc:mysql://localhost:3306/db2?zeroDateTimeBehavior=convertToNull
+      username: admin
+      password: admin
+      driver-class-name: com.mysql.jdbc.Driver
+
+flyway:
+  baseline-on-migrate: true
